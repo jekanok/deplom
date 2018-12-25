@@ -1,0 +1,355 @@
+html, body, div, span, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b,
+u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+	blockquote:before, blockquote:after, q:before, q:after {
+		content: '';
+		content: none;
+	}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	-webkit-text-size-adjust: none;
+}
+
+mark {
+	background-color: transparent;
+	color: inherit;
+}
+
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+input, select, textarea {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+}
+
+/* Basic */
+
+	html {
+		box-sizing: border-box;
+		font-size: 14px;
+	}
+
+	*, *:before, *:after {
+		box-sizing: inherit;
+	}
+
+	body {
+		background: #fff;
+	}
+	body, input, select, textarea {
+		color: #4f4e4e;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 1.65em;
+		background-color: #fff;
+	}
+.header {
+	background: url(../img/bg.jpg) no-repeat center;
+	background-size: cover;
+	width: 100%;
+	height: 800px;
+	z-index: 1;
+}
+
+.header__logo{
+	width: 273px;
+	height: 273px;
+	background: #000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	margin: 100px;
+}
+.header__logo a{
+	display: block;
+}
+.header_content {
+	color: #fff;
+	font-size: 49px;
+	font-weight: 400;
+	line-height: 62px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.header_content h2{
+	font-weight: 700;
+}
+.bg{
+	background: rgba(0, 0, 0, 0.43);
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	z-index: 1;
+}
+.header__form{
+	float: left;
+	width: 334px;
+	height: 385px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 999;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.28), 0 0 3px rgba(0, 0, 0, 0.04);
+}
+.h-form{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100px;
+	margin-bottom: 50px;
+}
+.header__form input[type="submit"]{
+	background-color: #227dd3;
+	color: #fff;
+	border: 1px solid #227dd3;
+	padding: 12px 33px;
+	text-transform: uppercase;
+	
+}
+.header__form p{
+	color: #938e8e;
+	font-size: 14px;
+	text-align: center;
+	line-height: 25px;
+	margin: 25px 0;
+}
+.form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+.form img{
+	background-size: cover;
+}
+.form input[type="text"]{
+	box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.09);
+	border: 1px solid #e5e5e5;
+	background-color: #ffffff;
+	max-width: 264px;
+	padding: 5px 10px;
+	margin: 30px 0;
+}
+.document{
+	width: 100%;
+	height: 400px;
+	background: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+.document h3{
+	color: #000;
+	font-size: 27px;
+	font-weight: 400;
+}
+.doc__item{
+	width: 400px;
+	display: flex;
+	flex-direction: row;
+	margin: 0px 20px;
+}
+.doc__info{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 30px;
+}
+.doc__list{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+.document p{
+	color: #4f4e4e;
+	font-weight: 400;
+	line-height: 23px;
+}
+.device{
+	height: 991px;
+	background-color: #5fc18b;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-content: space-between;
+	position: relative;
+}
+.device:before{
+	
+	content: '';
+	border: 331px solid transparent;
+    border-right: 1355px solid #308355;
+    border-bottom: 0px solid #308355;
+	position: absolute;
+	right: 0px; bottom: 0px;
+	z-index: 5;
+}
+.device:after{
+	content: '';
+	border: 291px solid transparent;
+    border-right: 1355px solid #44a36f;
+    border-bottom: 0px solid #44a36f;
+	position: absolute;
+	right: 0px; bottom: 0px;
+	z-index: 6;
+}
+.wrapper{
+	width: 685px;
+	margin: auto;
+}
+.wrappers{
+	width: 900px;
+	margin: auto;
+}
+.device__table h1{
+	font-size: 39px;
+	font-weight: bold;
+	line-height: 62px;
+	margin: 30px 0px;
+}
+.device__table{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: space-around;
+	height: 100%;
+}
+.device__table p{
+	z-index: 10;
+}
+.pc{
+	height: 490px;
+	background-color: #44a36f;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.device__pc{
+	color: #fff;
+	display: flex;
+}
+.device__info{
+	margin-left: 30px;
+}
+.device__info h1{
+	font-size: 39px;
+	font-weight: bold;
+	line-height: 62px;
+}
+.device__pc p{
+	line-height: 23px;
+}
+.device__info a{
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	font-size: 27px;
+	font-weight: 400;
+	border: 2px solid #fff;
+	padding: 5px 18px;
+	border-radius: 4px;
+	line-height: 30px;
+	margin-top: 30px;
+	
+}
+.mapsform{
+	width: 100%;
+	height: 635px;
+	background: url(../img/map.jpg) center no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.maps{
+	background-color: rgba(255, 255, 255, 0.8);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.09);
+	width: 430px;
+	height: 430px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+	border-radius: 50%;
+}
+.maps textarea{
+	max-height: 80px;
+}
+.maps input[type="text"], .maps textarea{
+	margin-top: 10px;
+	width: 65%;
+	border: 1px solid #d8d8d8;
+	padding:10px 6px;
+}
+.maps input[type="submit"]{
+	background: url(../img/submit.svg) center no-repeat;
+	width: 66px;
+	height: 67px;
+	border: none;
+	border-radius: 50%;
+	margin-top: 40px;
+}
+.footer{
+	width: 100%;
+	background-color: #43a06d;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.footer{
+	color: #fff;
+}
