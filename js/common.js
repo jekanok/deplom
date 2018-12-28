@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
     var access_token = window.location.hash.substr(1);
     
 	var id = access_token.split('.')[0];
@@ -21,4 +20,5 @@ $(document).ready(function () {
         });
     }
 
+   
 });
