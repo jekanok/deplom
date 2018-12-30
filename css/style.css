@@ -75,3 +75,19 @@ body{
 .users_item span{
     margin: 15px 0px;
 }
+.with-modal{
+    width: auto;
+    max-width: 550px;
+    height: auto;
+    max-height: 750px;
+    background: #fff;
+    margin: 20px auto;
+    padding: 40px 10px;
+    border-radius: 3px;
+}
+.avatar{
+    padding: 20px 0px;
+}
+.all_info_prifile{
+    margin: 20px 0px;
+}
