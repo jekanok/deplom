@@ -1,24 +1,25 @@
 $(document).ready(function () {
     var access_token = window.location.hash.substr(1);
-    
-	var id = access_token.split('.')[0];
-   
-	var id = id.replace('access_token=', '');
-    if (access_token != '') {
-        $.ajax({
-            type: "POST",
-            url: "auth.php",
-            data: {"access_token": access_token,"id":id},
-            cache: false,
-            success: function (data) {
-    			data = JSON.parse(data);
-			    $.each(data, function(index, data){});
-                console.log(data.like);
-                console.log(data.sql);
-                console.log(data.access_token);
-            }
-        });
-    }
+    var arr = access_token.split('.');
+    var id = arr[0].substr(13);
+    var tokens = access_token.substr(13);
+$.ajax({  
+  url: 'https://api.instagram.com/v1/users/'+id+'/media/recent/?client_id=01e9a9797a45457db450eac2e2989036&access_token='+tokens+'',  
+  dataType: "jsonp",  
+  success: function(data){
+      
+			var likes = 0;
+            var comments = 0;
+			 $.each(data.data, function(index, data){
+//                 count = Number(data.likes.count);
+                 likes += parseFloat(data.likes.count);
+                 comments += parseFloat(data.comments.count);
 
-   
+ });
+      
+            console.log(comments);	
+            console.log(likes);
+  }
+
+});
 });
