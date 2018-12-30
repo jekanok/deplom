@@ -33,7 +33,7 @@
              <div class="row">
                  <div class="col-12">
                     <div class="sig_in d-flex justify-content-center">
-                         <button onClick='location.href="https://api.instagram.com/oauth/authorize/?client_id=01e9a9797a45457db450eac2e2989036&redirect_uri=http://likser.ru/index.html&response_type=token"'>Авторизуватися</button>
+                         <button onClick='location.href="https://api.instagram.com/oauth/authorize/?client_id=01e9a9797a45457db450eac2e2989036&redirect_uri=http://likser.ru/index.php&response_type=token"'>Авторизуватися</button>
                     </div>
                  </div>
              </div>
